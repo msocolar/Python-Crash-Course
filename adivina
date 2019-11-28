@@ -1,8 +1,8 @@
-import random
+import random # importa una libreria que nos permite generar un número random
 
-nrointentos = 0
+nrointentos = 0 # definimos una variable llamada nrointentos y establecemos que es 0
 
-print('Introduzca su nombre')
+print('Introduzca su nombre') #
 
 minombre = input()
 
