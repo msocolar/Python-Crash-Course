@@ -1,0 +1,35 @@
+import random
+
+nrointentos = 0
+
+print('Introduzca su nombre')
+
+minombre = input()
+
+
+nro = random.randint(1, 10)
+print('Hola, ' + minombre +', estoy pensando en un número entre el 1 y el 10.')
+
+while nrointentos < 6:
+  print('adivina')
+  adivina = input()
+  adivina = int(adivina)
+
+  nrointentos = nrointentos + 1
+
+  if adivina < nro:
+    print('Muy poco!')
+
+  if adivina > nro:
+    print('Mucho!!')
+
+  if adivina == nro:
+    break
+
+if adivina == nro:
+  nrointentos = str(nrointentos)
+  print('Qué bien!! ' + minombre + ' Adivinaste mi número en ' + nrointentos + ' intentos!!')
+
+if adivina != nro:
+    nro = str(nro)
+    print('Ohhh :( El número que estaba pensando era' + nro)
