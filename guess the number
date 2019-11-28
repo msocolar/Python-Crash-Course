@@ -1,0 +1,65 @@
+import random
+
+ 3.
+
+ 4. nrointentos = 0
+
+ 5.
+
+ 6. print('Hola! Cual es tu nombre?')
+
+ 7. minombre = input()
+
+ 8.
+
+ 9. nro = random.randint(1, 10)
+
+10. print('Bueeeno, ' + minombre + ', Estoy pensando en un número entre el 1 y el 10.')
+
+11.
+
+12. while nrointentos < 3:
+
+13.     print('Adivina') # There are four spaces in front of print.
+
+14.     adivina = input()
+
+15.     adivina = int(adivina)
+
+16.
+
+17.     nrointentos = nrointentos + 1
+
+18.
+
+19.     if adivina < nro:
+
+20.         print('muy poco.') # There are eight spaces in front of print.
+
+21.
+
+22.     if adivina > nro:
+
+23.         print('mucho.') # 
+
+24.
+
+25.     if adivina == nro:
+
+26.         break
+
+27.
+
+28. if adivina == nro:
+
+29.     nrointentos = str(nrointentos)
+
+30.     print('Genial!!, ' + minombre + '! Adivinaste mi número en ' + nrointentos + ' intentos!')
+
+31.
+
+32. if adivina != nro:
+
+33.     nro = str(nro)
+
+34.     print('ohhh :(. El número que estaba pensando era ' + nro)
